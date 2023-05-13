@@ -1,8 +1,1 @@
-experiments/
-results/
-tb_logger/
-*.pyc
-.vscode/
-download
-download/*
-*.sh
+
