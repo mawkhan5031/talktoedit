@@ -12,8 +12,8 @@ replaced_layers: 8
 # dataset configs
 batch_size: 32
 num_workers: 8
-input_latent_dir: ./download/train_data/128/Bangs
-editing_latent_code_path: ./download/editing_data/128/Bangs.npz.npy
+input_latent_dir: /content/talktoedit/download/train_data/128/Bangs
+editing_latent_code_path: /content/talktoedit/download/editing_data/128/Bangs.npz.npy
 num_attr: 5
 val_on_train_subset: true
 val_on_valset: true
@@ -43,21 +43,21 @@ leaky_relu_neg_slope: 0.2
 # loss configs
 # predictor loss
 edited_attribute_weight: 1.0
-attr_file: ./configs/attributes_5.json
-predictor_ckpt: ./download/pretrained_models/predictor_128.pth.tar
+attr_file: /content/talktoedit/configs/attributes_5.json
+predictor_ckpt: /content/talktoedit/download/pretrained_models/predictor_128.pth.tar
 
 # arcface loss
-pretrained_arcface: ./download/pretrained_models/arcface_resnet18_110.pth
+pretrained_arcface: /content/talktoedit/download/pretrained_models/arcface_resnet18_110.pth
 arcface_weight: 5.0
 arcface_loss_type: l1
 # disciminator loss
 disc_weight: 1.0
-discriminator_ckpt: ./download/pretrained_models/stylegan2_128.pt
+discriminator_ckpt: /content/talktoedit/download/pretrained_models/stylegan2_128.pt
 
 # stylegan configs
 img_res: 128
 latent_dim: 512
 n_mlp: 8
 channel_multiplier: 1
-generator_ckpt: ./download/pretrained_models/stylegan2_128.pt
+generator_ckpt: /content/talktoedit/download/pretrained_models/stylegan2_128.pt
 latent_space: w
