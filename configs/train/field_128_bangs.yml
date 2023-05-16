@@ -10,7 +10,7 @@ fix_layers: true
 replaced_layers: 8
 
 # dataset configs
-batch_size: 32
+batch_size: 16
 num_workers: 8
 input_latent_dir: /content/talktoedit/download/train_data/128/Bangs
 editing_latent_code_path: /content/talktoedit/download/editing_data/128/Bangs.npz.npy
